@@ -1,0 +1,14 @@
+
+header {
+  background-color: #571902;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  top: 0px;
+}

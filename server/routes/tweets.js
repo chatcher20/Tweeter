@@ -44,3 +44,8 @@ module.exports = function(DataHelpers) {
   return tweetsRoutes;
 
 }
+
+
+
+// Specify the correct action and method attributes to the form so that it submits 
+// to the correct endpoint/route in your Express app (POST /tweets/).

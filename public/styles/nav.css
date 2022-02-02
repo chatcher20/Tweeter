@@ -18,9 +18,28 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1; /* the default z-index is 0. So putting this as 1 and leaving header (as the default, 0) will mean the nav will be "on top." Need a position key to go along with z-index... */
+  position: relative; /* 4 different postions. Need a position to go with z index. Default is static. For z index to be functional, need to set to one of the 3 that are not static. */
 }
 
-nav span {
+
+.logo {
 font-family: "Bungee", sans-serif;
 font-size: 5vw;
+}
+
+.nav-quick-tweet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+
+.nav-quick-tweet p {
+  margin: 0;
+}
+
+
+.arrow {
+  color: red;
 }
