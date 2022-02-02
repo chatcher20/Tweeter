@@ -23,30 +23,7 @@ body {
 
 
 
-main {
-  width: 90%;
-  display: flex;
-  justify-content: center;
-  color: rgb(46, 3, 3);
-  background-color: #f4f1ec;
-  margin: 0 auto;
-}
 
-/*
-
-Since this is a page layout issue, make your CSS changes to the layout.css instead of nav.css.
-
-Style the <main> element to be:
-
-90% of the width of its parent element
-center aligned to the body
-the same background colour as the <body> element
-Tip: Add some temporary tags like paragraphs or headings (e.g. <p> <h1> <h2>) into main to see 
-how it flows and that it aligns well vertically. We recommend using one of these handy Lorem Ipsum 
-generators if you're at a loss for words.
-
-
-*/
 
 
 
