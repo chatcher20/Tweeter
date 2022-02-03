@@ -1,5 +1,4 @@
 main {
-  background-color:white;
   margin: 0 auto;
   width: 100%;
   display: flex;
@@ -7,24 +6,26 @@ main {
   flex-direction: column;
   align-items: center;
   position: relative;
-  top: 0px;
-  padding: 3em;
+  padding: 2em;
+  background-color: #f3f1ed;
 }
 
 .new-tweet {
   width: 100%;
-  border: 1px solid;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2em;
-  background-color: #f3f1ed;
 }
 
 form {
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+label {
+  font-weight: bold;
 }
 
 textarea {
@@ -44,8 +45,4 @@ textarea {
 .button-counter button {
   background-color:#4056a1;
   color: white;
-}
-
-label {
-  font-weight: bold;
 }

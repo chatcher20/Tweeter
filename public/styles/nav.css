@@ -1,27 +1,18 @@
-/*
-Change the appearance of the nav based on the following rules:
 
-120 pixels in height
-Full width of the viewport
-#4056A1 as its default background colour
-#FFFFFF as its default font colour
-<span> within the <nav> uses Bungee as its default font-family
-1.5ems of space on the right and left between the content and the edges
-*/
 
 nav {
   height: 120px;
-  width: 100%;
-  background-color: #4056A1;
+  background-color: #3866e6;
   color: #FFFFFF;   /* There's no foreground-color property in CSS, so what makes this possible is the color property. */
   padding: 0 1.5em;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1; /* the default z-index is 0. So putting this as 1 and leaving header (as the default, 0) will mean the nav will be "on top." Need a position key to go along with z-index... */
-  position: relative; /* 4 different postions. Need a position to go with z index. Default is static. For z index to be functional, need to set to one of the 3 that are not static. */
+  z-index: 5; /* the default z-index is 0. So putting this as 1 and leaving header (as the default, 0) will mean the nav will be "on top." Need a position key to go along with z-index... */
+  position: sticky; /* 4 different postions. Need a position to go with z index. Default is static. For z index to be functional, need to set to one of the 3 that are not static. */
+  top: 0;
+  width: 100%;
 }
-
 
 .logo {
 font-family: "Bungee", sans-serif;
@@ -39,7 +30,49 @@ font-size: 5vw;
   margin: 0;
 }
 
-
 .arrow {
   color: red;
 }
+
+/*
+position
+top
+width
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position:fixed;
+  top: 0;
+  align-items: end;
+  height: 120px;
+  width:100%;
+  background-color:#4056A1;
+  color: #FFFFFF;
+  padding: .5em 1.5em;
+  z-index: 10;
+}
+
+nav span {
+  font-family: "Bungee", sans-serif;
+  align-self: flex-end;
+}
+
+.new_tweet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+   <nav>
+      <span class="logo">TWEETER</span>
+      <div class="new_tweet">
+        <div class="directions"><b>Write </b> a new tweet</div>
+        <div<i class="fa-solid fa-angles-down"></i></div>
+      </div>
+    </nav>
+
+
+    */

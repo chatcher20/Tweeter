@@ -21,35 +21,46 @@ body {
   font-family: "Source Sans Pro", sans-serif;
 }
 
+#tweets-container {
+  width: 95%;
+}
 
+.tweet-container {
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid;
+  margin-top: 75px;
+}
 
+.tweet-container > header {     /* parent > child */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 2em;
+}
 
+.tweet-body {
+  width: 100%;
+  padding: 2em 0;
+}
 
+.tweet-container > footer {     /* parent > child */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 4px solid #63542d80;
+  padding-top: 1em;
+}
 
+.tweet-container:hover {
+  box-shadow:0.5em 0.5em #63542d80;
+}
 
+.fas fa-flag-checkered:hover, .fas fa-retweet:hover, .far fa-heart:hover {
+  color: #63542d80;
+}
 
-
-
-
-
-
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- */
