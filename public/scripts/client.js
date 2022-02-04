@@ -9,8 +9,7 @@
 //   {
 //     "user": {
 //       "name": "Newton",
-//       "avatars": "https://i.imgur.com/73hZDYK.png"
-//       ,
+//       "avatars": "https://i.imgur.com/73hZDYK.png",
 //       "handle": "@SirIsaac"
 //     },
 //     "content": {
@@ -30,22 +29,31 @@
 //   }
 // ]
 
+
+
+
 const escape = function (str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
 };
 
+
+
+
+
 $(document).ready(() => {
 
-  // $(".empty").hide();
-  // $(".exceeds").hide();
+  // Hide the error messages.
+  $(".empty").hide();
+  $(".exceeds").hide();
+
 
   // const safeHTML = `<p>${escape(textFromUser)}</p>`;
   const createTweetElement = (input) => { const article = `
     <article class="tweet-container">
       <header>
-        <div class="avatar">${input.user.name}</div>
+        <div class="avatar"><img src="${input.user.avatars}">${input.user.name}</div>  
         <div class="handle">${input.user.handle}</div>
       </header>
       <div class="tweet-body">${escape(input.content.text)}</div>
@@ -93,19 +101,25 @@ $(document).ready(() => {
   $("#form").submit(function(event) {
     event.preventDefault();         // Stops form from submitting normally (making a GET request to the current page)
     console.log("the form has been submitted");
+    
     let newTweet = $('#tweet-text').val();     // The .val() method is primarily used to get the values of form elements such as input, select and textarea. When called on an empty collection, it returns undefined.
 
     //Validate that the data is not empty and <= 140 characters before running POST request.
     if (newTweet.length === 0) {
-      alert("Your tweet is empty!");
-      // $(".empty").slideDown();
+      // alert("Your tweet is empty!");
+      $(".empty").slideDown();
       return;
     };
+
     if (newTweet.length > 140) {
-      alert("Your tweet must be 140 characters or less!");
-      // $(".exceeds").slideDown();
+      // alert("Your tweet must be 140 characters or less!");
+      $(".exceeds").slideDown();
       return;
     };
+    
+    // Hide the error messages. Need to put this here (again, because you have them first beneaththe document.ready up top) in order to hide an error message if a previous attempt was made which prompted an error mssage to happen.
+    $(".empty").hide();
+    $(".exceeds").hide();
     
     // serialize the form data (turn it into a urlencoded string to be sent to the server)
     // const data = $(".button-counter").serialize();
@@ -121,8 +135,6 @@ $(document).ready(() => {
   });
 
 
-
-  
 
 
 });
