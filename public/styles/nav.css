@@ -10,25 +10,25 @@ nav {
   position: fixed; /* 4 different postions. Need a position to go with z index. Default is static. For z index to be functional, need to set to one of the 3 that are not static. */
   top: 0;
   width: 100%;
-};
+}
 
 .logo {
 font-family: "Bungee", sans-serif;
 font-size: 5vw;
-};
+}
 
 .nav-quick-tweet {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center
-};
+}
 
 .nav-quick-tweet p {
   margin: 0;
-};
+}
 
 .arrow {
   color: red;
-};
+}
 

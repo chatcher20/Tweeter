@@ -6,11 +6,11 @@
 
 html {
   box-sizing: border-box;
-};
+}
 
 *, *:before, *:after {
   box-sizing: inherit;
-};
+}
 
 /*
  * Layout
@@ -21,15 +21,15 @@ body {
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: "Source Sans Pro", sans-serif;
-};
+}
 
 .container {
   top: 120px;
-};
+}
 
 #tweets-container {
   width: 95%;
-};
+}
 
 .tweet-container {
   width: 100%;
@@ -38,7 +38,7 @@ body {
   flex-direction: column;
   border: 2px solid;
   margin-top: 75px;
-};
+}
 
 .tweet-container > header {     /* parent > child */
   width: 100%;
@@ -46,12 +46,12 @@ body {
   flex-direction: row;
   justify-content: space-between;
   height: 2em;
-};
+}
 
 .tweet-body {
   width: 100%;
   padding: 2em 0;
-};
+}
 
 .tweet-container > footer {     /* parent > child */
   width: 100%;
@@ -60,26 +60,26 @@ body {
   justify-content: space-between;
   border-top: 4px solid #63542d80;
   padding-top: 1em;
-};
+}
 
 .tweet-container:hover {
   box-shadow:0.5em 0.5em #63542d80;
-};
+}
 
 .fas fa-flag-checkered:hover, .fas fa-retweet:hover, .far fa-heart:hover {
   color: #63542d80;
-};
+}
 
 
 
 
 
  
- @media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     body {
       display: flex;
     }
-  };
+}
 
 
 
