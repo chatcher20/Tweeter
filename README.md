@@ -17,6 +17,8 @@ Tweeter is a simple, single-page Twitter clone. I utilized skills in HTML, CSS, 
 
 ## Screenshots
 
+#### Desktop Screenshot
 ![Desktop View](https://github.com/chatcher20/Tweeter/blob/master/docs/Tweeter%20Screenshot%20A.png?raw=true)
 
+#### Mobile Scrolling Screenshot
 ![Mobile View](https://github.com/chatcher20/Tweeter/blob/master/docs/Tweeter%20Screenshot%20B.png?raw=true)
