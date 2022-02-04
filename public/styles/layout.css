@@ -21,6 +21,10 @@ body {
   font-family: "Source Sans Pro", sans-serif;
 }
 
+.container {
+  top: 120px;
+}
+
 #tweets-container {
   width: 95%;
 }
@@ -63,4 +67,61 @@ body {
 .fas fa-flag-checkered:hover, .fas fa-retweet:hover, .far fa-heart:hover {
   color: #63542d80;
 }
+
+
+
+
+
+ /* Tablet Styles */
+ @media only screen and (min-width: 768px) {
+  body {
+    display: flex;
+    
+  }
+  /* .main-page-header {
+    width: 33.3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  };
+      
+    .container {
+      margin-right: 20px;
+      flex: 1 1 100%;
+      width: 50%;
+      margin-top: 10em;
+  }; */
+
+ };
+
+/* 
+  Tablet Styles 
+@media only screen and (min-width: 768px) {
+  .header-container {
+    padding-top: 130px;
+    display: flex;
+    flex-direction: row;
+  }
+  .container {
+    margin-right: 20px;
+    flex: 1 1 100%;
+    width: 50%;
+  }
+}
+
+Desktop styles 
+@media only screen and (min-width: 1024px) {
+  .header-container {
+    padding-top: 130px;
+    display: flex;
+    flex-direction: row;
+  }
+  .container {
+    margin-right: 20px;
+    flex: 1 1 50%;
+    width: 50%;
+  }
+}
+
+ */
 
