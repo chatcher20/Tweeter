@@ -58,15 +58,12 @@ body {
 }
 
 .fa-flag-checkered:hover, .fa-retweet:hover, .fa-heart:hover {
-  color: red;
-  box-shadow: 0.5em 0.5em grey;
-  text-shadow: 0.2px 0.2px;
+  color: rgb(21, 7, 221);
 }
 
 .tweet-container:hover {
   box-shadow:0.5em 0.5em #63542d80;
 }
-
 
 
 @media only screen and (min-width: 768px) {
