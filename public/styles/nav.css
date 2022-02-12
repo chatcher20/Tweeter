@@ -1,13 +1,13 @@
 nav {
   height: 120px;
   background-color: #3866e6;
-  color: #FFFFFF;   /* There's no foreground-color property in CSS, so what makes this possible is the color property. */
+  color: #FFFFFF;
   padding: 0 1.5em;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 5; /* the default z-index is 0. So putting this as 1 and leaving header (as the default, 0) will mean the nav will be "on top." Need a position key to go along with z-index... */
-  position: fixed; /* 4 different postions. Need a position to go with z index. Default is static. For z index to be functional, need to set to one of the 3 that are not static. */
+  z-index: 5;
+  position: fixed;
   top: 0;
   width: 100%;
 }
@@ -31,4 +31,3 @@ font-size: 5vw;
 .arrow {
   color: red;
 }
-
