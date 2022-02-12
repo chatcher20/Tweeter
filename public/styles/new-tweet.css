@@ -41,10 +41,9 @@ textarea {
   border-bottom: 4px solid black;
   width: 100%;
   background-color: #f3f1ed;
-  word-wrap: normal;
-  /* overflow-wrap: break-word; */
-  /* display: block;
-  overflow-wrap: break-word; */
+  word-break: break-word;  
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
 }
 
 .button-counter {
