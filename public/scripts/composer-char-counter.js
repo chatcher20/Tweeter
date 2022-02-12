@@ -10,8 +10,15 @@ $(document).ready(function() {
 
     if (counter < 0) {
       $(".counter").css('color', '#da2809');   // referring to class "counter" on line 70 of index.html, not our variable declared on line 21.
+    } else {
+      $(".counter").css('color', '#545149');
     }
   })  
   
 });
+
+
+
+
+
 

@@ -10,13 +10,21 @@
   background-color: #f3f1ed;
 }
 
+.empty {
+  color: red;
+}
+
+.exceeds {
+  color: red;
+}
+
 .new-tweet {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2em;
-}
+} 
 
 form {
   width: 100%;
@@ -33,6 +41,10 @@ textarea {
   border-bottom: 4px solid black;
   width: 100%;
   background-color: #f3f1ed;
+  word-wrap: normal;
+  /* overflow-wrap: break-word; */
+  /* display: block;
+  overflow-wrap: break-word; */
 }
 
 .button-counter {
